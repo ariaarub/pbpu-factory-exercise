@@ -1,20 +1,15 @@
 public class Honda implements Autofactory {
 
     @Override
-    public void createCar() {
-        Car hondaCar = new HondaCar();
-        System.out.println(
-            hondaCar.createCar()
-        );
-        
+    public Car createCar() {
+        System.out.println("Honda Car created!");
+        return new HondaCar();
     }
 
     @Override
-    public void createBike() {
-        Bike hondaBike = new HondaBike();
-        System.out.println(
-            hondaBike.createBike()
-        );
+    public Bike createBike() {
+        System.out.println("Honda Bike created!");
+        return new HondaBike();
     }
     
 }

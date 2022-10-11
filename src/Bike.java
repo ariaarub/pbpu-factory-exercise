@@ -1,3 +1,3 @@
 public interface Bike {
-    public String createBike();
+    public Bike createBike();
 }

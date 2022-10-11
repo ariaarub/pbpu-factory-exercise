@@ -1,8 +1,8 @@
 public class HondaCar implements Car {
 
     @Override
-    public String createCar() {
-        return "Honda Car created!";        
+    public Car createCar() {
+        return new HondaCar();        
         
     }
     

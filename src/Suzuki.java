@@ -1,20 +1,15 @@
 public class Suzuki implements Autofactory {
 
     @Override
-    public void createCar() {
-        Car suzukiCar = new SuzukiCar();
-        System.out.println(
-            suzukiCar.createCar()
-        );
-        
+    public Car createCar() {
+        System.out.println("Suzuki Car created!");
+        return new SuzukiCar();
     }
 
     @Override
-    public void createBike() {
-        Bike suzukiBike = new SuzukiBike();
-        System.out.println(
-            suzukiBike.createBike()
-        );
+    public Bike createBike() {
+        System.out.println("Suzuki Bike created!");
+        return new SuzukiBike();
     }
     
 }

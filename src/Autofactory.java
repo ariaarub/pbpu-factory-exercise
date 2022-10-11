@@ -1,4 +1,4 @@
 public interface Autofactory {
-    public void createCar();
-    public void createBike();
+    public Car createCar();
+    public Bike createBike();
 }
